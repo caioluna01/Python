@@ -26,10 +26,10 @@ class GerenciadorEstoque:
     def listar_produtos(self):
         """Lista todos os produtos"""
         if not self.produtos:
-            print("📦 Nenhum produto cadastrado.")
+            print(" Nenhum produto cadastrado.")
             return
         print("\n" + "="*50)
-        print("📋 LISTA DE PRODUTOS")
+        print(" LISTA DE PRODUTOS")
         print("="*50)
         for produto in self.produtos.values():
             print(produto)
@@ -111,11 +111,11 @@ def main():
             sistema.produtos_baixo_estoque(limite)
         
         elif opcao == "6":
-            print("👋 Saindo do sistema...")
+            print(" Saindo do sistema...")
             break
         
         else:
-            print("❌ Opção inválida!")
+            print(" Opção inválida!")
 
 
 if __name__ == "__main__":
